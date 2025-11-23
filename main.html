@@ -8,8 +8,19 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<p id="counter">0</p>
+	<button id="incrementBtn">Increment</button>
+    <script>
+		let p=document.querySelector("#counter");
+let btn=document.querySelector("#incrementBtn");
+
+btn.addEventListener("click",function(e){
+	let curr=Number(p.textContent);
+	alert(curr);
+	p.textContent=curr+1;
+	
+})
+	</script>
 
 </body>
 
